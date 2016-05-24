@@ -1,0 +1,241 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Intro To Kanban</title>
+    <meta name="description" content="Introduction to Kanban">
+    <meta name="author" content="Jon Roberts">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="//code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="//code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/deedle.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <script src="fsharp.formatting/styles/tips.js" type="text/javascript"></script>
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/fsreveal.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script language="javascript" type="text/javascript">
+        function init()
+        {
+            websocket = new WebSocket("ws://"+window.location.host+"/websocket");
+            websocket.onmessage = function(evt) { location.reload(); };
+        }
+        window.addEventListener("load", init, false);
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section >
+<h1>What is Kanban?</h1>
+</section>
+<section >
+<h2>Word Origin is Japanese</h2>
+<blockquote>
+<p><strong>Literal Translation of 看板</strong>: signboard</p>
+</blockquote>
+</section>
+<section >
+<h2>But It's Different Than Kanban for Manufacturing</h2>
+<p><img src="images/Kanban_Manufacturing.jpg" alt="Toyota Production Systems" /></p>
+</section>
+<section >
+<h2>Origins of Kanban for Knowledge Work</h2>
+<p><img src="images/leankanban.png" alt="Lean Kanban" /></p>
+<ul>
+<li>Began with David Anderson using "Drum-Buffer-Rope" Method at Microsoft in 2004</li>
+<li>More Info: <a href="http://www.djaa.com/brief-history-kanban-knowledge-work">http://www.djaa.com/brief-history-kanban-knowledge-work</a></li>
+</ul>
+</section>
+<section >
+<h2>The Kanban Method</h2>
+<h3>Principles</h3>
+<ol>
+<li>Start with what you do now</li>
+<li>Agree to pursue incremental, evolutionary change</li>
+<li>Respect the current process, roles, responsibilities &amp; titles</li>
+<li>Encourage acts of leadership at all levels in your organization</li>
+</ol>
+</section>
+<section >
+<h2>The Kanban Method</h2>
+<h3>General Practices</h3>
+<ol>
+<li>Visualize (the work, workflow and business risks)</li>
+<li>Limit WIP</li>
+<li>Manage Flow</li>
+<li>Make Process Explicit</li>
+<li>Implement Feedback Loops</li>
+<li>Improve Collaboratively, Evolve Experimentally (using models &amp; the scientific method)</li>
+</ol>
+</section>
+<section >
+<section >
+<h2>Example:</h2>
+<h3>Kanban at Home</h3>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>The Team (age when started experiment)</h3>
+<ul>
+<li>Dad (more than 30)</li>
+<li>Mom (less than 40)</li>
+<li>Samara (16)</li>
+<li>Josiah (15)</li>
+<li>Gideon (13)</li>
+<li>Miriam (11)</li>
+</ul>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<p>Is this Kanban?
+<img src="images/kah/system.jpeg" alt="Dishes" /></p>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<p>Yes, it can be!
+<img src="images/kah/system_visualize.jpeg" alt="Dishes" /></p>
+</section>
+<section >
+<h3>Cultural Obstacles to</h3>
+<h3>Kanban at Home</h3>
+<ul>
+<li>Dictatorship (Rigid Hierarchy)</li>
+<li>Closed Culture (Dissent/Conflict is discouraged or punished)</li>
+<li>Boring Meetings</li>
+<li>Only Ideas From the Leadership (Mom and Dad)</li>
+<li>Too Many Ideas From Leadership (Selling Ideas to Rank and File)</li>
+</ul>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Initial Target Areas</h3>
+<ul>
+<li>Laundry</li>
+<li>Dishes</li>
+</ul>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Observations and Learnings</h3>
+<ul>
+<li>Had to be OK allowing some experiments that we "knew" wouldn't work</li>
+<li>Took longer than initially anticipated for buy-in and ownership</li>
+</ul>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Kaizen With Weekly Meetings</h3>
+<ul>
+<li>logs kept</li>
+<li>leader rotates</li>
+</ul>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Meeting Log Example</h3>
+<p><img src="images/kah/log1.jpg" alt="Meeting Log 1" /></p>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Meeting Log Example</h3>
+<p><img src="images/kah/log2.jpeg" alt="Meeting Log 2" /></p>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Meeting Log Example</h3>
+<h2><img src="images/kah/log3.jpeg" alt="Meeting Log 3" /></h2>
+<h3>Kanban at Home</h3>
+<h3>Meeting Log Example</h3>
+<p><img src="images/kah/log4.jpeg" alt="Meeting Log 4" /></p>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Learning and Experimenting</h3>
+<p><img src="images/kah/sanitizer_2.jpeg" alt="sanitizer" /></p>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Innovations</h3>
+<ul>
+<li>Chore Chart</li>
+<li>Dirty Dish</li>
+</ul>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Chore Chart</h3>
+<p><img src="images/kah/chore_chart.jpeg" alt="Chore Chart" /></p>
+</section>
+<section >
+<h3>Kanban at Home</h3>
+<h3>Dirty Dish</h3>
+<p><img src="images/kah/dirty_dish.jpeg" alt="Dirty Dish" /></p>
+</section>
+<section >
+<h3>Kanban at Home today</h3>
+<p><img src="images/kah/kanban_today.jpeg" alt="Dirty Dish" /></p>
+</section>
+</section>
+
+
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Add the nohighlight class and data-noescape attribute to code elements that have already been formatted by FSharp.Formatting
+        $('pre.highlighted code').addClass('nohighlight').attr('data-noescape', '');
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>
+
